@@ -1,3 +1,5 @@
 body {
-    background-image: url("{{ 'forest.jpg' | asset_url }}")
+    {% comment %} background-image: url("{{ 'forest.jpg' | asset_url }}") {% endcomment %}
+    background-color: {{ settings.bg }};
+    color: {{ settings.text_color }};
 }
